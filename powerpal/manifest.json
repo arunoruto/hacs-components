@@ -1,0 +1,10 @@
+{
+  "domain": "powerpal",
+  "name": "PowerPal",
+  "version": "0.2.0",
+  "documentation": "https://github.com/arunoruto/powerpal",
+  "issue_tracker": "https://github.com/arunoruto/powerpal/issues",
+  "codeowners": ["@arunoruto"],
+  "iot_class": "local_push",
+  "config_flow": true
+}

@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set Up Power Pal Contract (Step 1/2)",
+        "description": "First, give your contract a unique name and choose the pricing type.",
+        "data": {
+          "name": "Contract Name",
+          "price_type": "Pricing Type"
+        }
+      },
+      "static": {
+        "title": "Static Price (Step 2/2)",
+        "description": "Enter the fixed price per kWh. A custom 'number' entity will be created for you with this initial value.",
+        "data": {
+          "price": "Initial Price (€/kWh)",
+          "source_sensor": "Total Energy Sensor (kWh)"
+        }
+      },
+      "dynamic": {
+        "title": "Dynamic Price (Step 2/2)",
+        "description": "Select the sensor that provides the hourly price and your total energy sensor.",
+        "data": {
+          "price_entity": "Hourly Price Sensor (€/kWh)",
+          "source_sensor": "Total Energy Sensor (kWh)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "A contract with this name has already been configured."
+    }
+  },
+  "selector": {
+    "price_type": {
+      "options": {
+        "static": "Static Price (creates a number entity)",
+        "dynamic": "Dynamic Price (uses an existing sensor)"
+      }
+    }
+  }
+}
