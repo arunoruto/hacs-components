@@ -1,0 +1,2 @@
+# hacs-components
+Custom integrations
